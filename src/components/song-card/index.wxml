@@ -1,0 +1,8 @@
+    <view class="card">
+        <view class="square">
+            <image class="cover-image"
+                   src="{{song.picUrl}}"></image>
+        </view>
+        <text class="song-name">{{song.song.album.name}}</text>
+        <text class="artist-name">{{song.song.artists[0].name}}</text>
+    </view>

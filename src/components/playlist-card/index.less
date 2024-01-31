@@ -1,0 +1,39 @@
+.card {
+    // width: 32%;
+    overflow: hidden;
+    .square {
+        position: relative;
+        // 保证是正方形
+        height: 0;
+        padding-bottom: 100%;
+        .top-right-title {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            right: 10rpx;
+            color: white;
+            font-size: 24rpx;
+            background-image: linear-gradient(90deg,rgba(0,0,0,0), rgba(0,0,0,0.5));
+            padding: 2rpx 4rpx;
+        }
+    }
+    .cover-image {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        
+    }
+    .count-icon {
+        width: 12px;
+        height: 12px;
+        margin-right: 4rpx;
+        margin-top: 4rpx;
+    }
+    .music-name {
+        text-overflow: ellipsis;
+        font-size: 26rpx;
+        color: #666;
+    }
+}

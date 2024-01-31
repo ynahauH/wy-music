@@ -1,0 +1,12 @@
+<view class="card">
+    <view class="square">
+        <image class="cover-image"
+               src="{{playlist.picUrl}}"></image>
+        <view class="top-right-title">
+            <image class="count-icon"
+                   src="./images/headset_icon.png"></image>
+            {{playlist.playCount}}
+        </view>
+    </view>
+    <text class="music-name">{{playlist.name}}</text>
+</view>

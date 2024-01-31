@@ -1,0 +1,53 @@
+<view class="recommend-tab">
+    <!-- 推荐歌单 -->
+    <view class="recommend-panel">
+        <view class="top-title">
+            <image src="../images/calendar_icon.png"></image>
+            <text class="recommend-title">推荐歌单</text>
+        </view>
+        <view class="card-list">
+            <navigator class="card"
+                       wx:for="{{playlist}}"
+                       wx:key="id"
+                       wx:for-item="playlist">
+                <playlist-card playlist="{{playlist}}"></playlist-card>
+            </navigator>
+        </view>
+    </view>
+
+    <!-- 最新音乐 -->
+    <view class="recommend-panel">
+        <view class="top-title">
+            <image src="../images/new_song_icon.png"></image>
+            <text class="recommend-title">最新音乐</text>
+        </view>
+        <!-- 封装单个卡片，在外边循环 -->
+        <view class="card-list">
+            <navigator class="card"
+                       wx:for="{{newSongList}}"
+                       wx:key="id"
+                       wx:for-item="song">
+                <song-card song="{{song}}"></song-card>
+            </navigator>
+        </view>
+    </view>
+
+
+    <!-- 推荐mv-->
+    <view class="recommend-panel">
+        <view class="top-title">
+            <image src="../images/mv_icon.png"></image>
+            <text class="recommend-title">推荐MV</text>
+        </view>
+        <view class="card-list"></view>
+    </view>
+
+    <!-- 主播电台 -->
+    <view class="recommend-panel">
+        <view class="top-title">
+            <image src="../images/dj_icon.png"></image>
+            <text class="recommend-title">主播电台</text>
+        </view>
+        <view class="card-list"></view>
+    </view>
+</view>
