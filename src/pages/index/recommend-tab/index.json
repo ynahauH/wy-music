@@ -1,7 +1,7 @@
 {
     "component": true,
     "usingComponents": {
-        "song-card": "/components/song-card",
-        "playlist-card": "/components/playlist-card"
+        "song-card": "/components/card/song-card",
+        "playlist-card": "/components/card/playlist-card"
     }
 }
